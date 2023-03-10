@@ -1,14 +1,22 @@
 
-import reactLogo from './assets/react.svg'
+import { Routes, Route } from 'react-router'
 import './App.css'
+import Contact from './views/Contact'
+import Home from './views/Home'
+import Project from './views/Project'
+import Technologies from './views/Technologies'
 
-function App() {
- 
-
+function App (): JSX.Element {
   return (
-    <div className="App">
+<>
+<Routes>
+  <Route path='/' element={<Home/>}/>
+  <Route path='/proyectos' element={<Project/>}/>
+  <Route path='/tecnologias' element={<Technologies/>}/>
+  <Route path='/contact' element={<Contact/>}/>
 
-    </div>
+</Routes>
+</>
   )
 }
 

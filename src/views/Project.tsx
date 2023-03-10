@@ -1,11 +1,10 @@
-import React from 'react'
 
-const Project = () => {
-    return (
+const Project = (): JSX.Element => {
+  return (
         <div>
 
         </div>
-    )
+  )
 }
 
 export default Project
